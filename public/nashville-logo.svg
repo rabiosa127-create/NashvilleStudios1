@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 359 64" width="359" height="64" fill="none">
+  <defs>
+    <!-- Liquid Frosted Glass Capsule Background Gradient -->
+    <linearGradient id="glassBg" x1="0" y1="0" x2="359" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#040920" stop-opacity="0.95" />
+      <stop offset="45%" stop-color="#0e1844" stop-opacity="0.80" />
+      <stop offset="100%" stop-color="#020516" stop-opacity="0.96" />
+    </linearGradient>
+
+    <!-- Frosted Glass Rim Border Gradient -->
+    <linearGradient id="glassRim" x1="180" y1="0" x2="180" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.65" />
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.20" />
+      <stop offset="70%" stop-color="#0047FF" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0047FF" stop-opacity="0.55" />
+    </linearGradient>
+
+    <!-- Top Specular Curved Lens Light Reflection -->
+    <linearGradient id="topSpecular" x1="32" y1="0" x2="327" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="18%" stop-color="#FFFFFF" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="82%" stop-color="#FFFFFF" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Star Core Luminous Glow -->
+    <radialGradient id="starGlow" cx="307" cy="32" r="26" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7075F7" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="#7075F7" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#7075F7" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Star Filter Bloom -->
+    <filter id="bloom" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="1.2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Frosted Glass Capsule Base -->
+  <rect x="0.5" y="0.5" width="358" height="63" rx="31.5" fill="url(#glassBg)" stroke="url(#glassRim)" stroke-width="1" />
+
+  <!-- Top Specular Curved Light Arc -->
+  <path d="M 32,2 Q 180,1 327,2" stroke="url(#topSpecular)" stroke-width="1.2" stroke-linecap="round" fill="none" />
+
+  <!-- Star Ambient Glow -->
+  <circle cx="307" cy="32" r="26" fill="url(#starGlow)" />
+
+  <!-- Pixelated Typography: 100% Crisp Edges -->
+  <g id="pixel-letters" shape-rendering="crispEdges">
+    <rect x="42" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="62" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="42" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="46" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="62" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="42" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="50" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="62" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="42" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="54" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="62" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="42" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="58" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="62" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="42" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="62" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="42" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="62" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="77" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="81" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="85" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="89" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="73" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="93" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="73" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="93" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="73" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="77" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="81" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="85" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="89" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="93" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="73" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="93" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="73" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="93" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="73" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="93" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="108" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="112" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="116" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="120" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="104" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="104" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="108" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="112" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="116" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="120" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="124" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="124" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="108" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="112" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="116" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="120" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="135" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="155" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="135" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="155" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="135" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="155" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="135" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="139" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="143" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="147" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="151" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="155" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="135" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="155" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="135" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="155" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="135" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="155" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="166" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="186" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="166" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="186" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="166" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="186" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="166" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="186" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="170" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="182" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="170" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="182" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="174" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="178" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="197" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="201" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="197" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="201" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="197" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="201" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="197" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="201" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="197" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="201" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="197" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="201" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="197" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="201" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="212" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="212" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="212" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="212" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="212" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="212" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="212" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="216" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="220" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="224" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="228" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="239" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="239" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="239" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="239" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="239" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="239" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="239" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="243" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="247" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="251" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="255" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="266" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="270" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="274" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="278" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="282" y="18.0" width="4" height="4" fill="#FFFFFF" /><rect x="266" y="22.0" width="4" height="4" fill="#FFFFFF" /><rect x="266" y="26.0" width="4" height="4" fill="#FFFFFF" /><rect x="266" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="270" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="274" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="278" y="30.0" width="4" height="4" fill="#FFFFFF" /><rect x="266" y="34.0" width="4" height="4" fill="#FFFFFF" /><rect x="266" y="38.0" width="4" height="4" fill="#FFFFFF" /><rect x="266" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="270" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="274" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="278" y="42.0" width="4" height="4" fill="#FFFFFF" /><rect x="282" y="42.0" width="4" height="4" fill="#FFFFFF" />
+  </g>
+
+  <!-- 4-Point Astroid Sparkle Star -->
+  <path
+    d="M 307,16.0 Q 307,32.0 321,32.0 Q 307,32.0 307,48.0 Q 307,32.0 293,32.0 Q 307,32.0 307,16.0 Z"
+    fill="#7075F7"
+    filter="url(#bloom)"
+    shape-rendering="geometricPrecision"
+  />
+</svg>

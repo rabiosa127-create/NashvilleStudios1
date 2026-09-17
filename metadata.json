@@ -1,0 +1,6 @@
+{
+  "name": "Nashville Studios",
+  "description": "Creative digital studio website with iOS-inspired glassmorphism, bespoke pixel display typography, #AFBEA4 background, and #224347 Cyprus ink art direction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

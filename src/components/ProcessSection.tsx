@@ -14,45 +14,59 @@ export const ProcessSection: React.FC = () => {
   return (
     <section id="process" className="py-24 sm:py-32 border-t border-[#224347]/20">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-10">
-        <div className="grid grid-cols-12 gap-4 sm:gap-6">
-          
-          {/* Label Header */}
-          <div className="col-span-12 mb-10 sm:mb-14">
-            <span className="label-tag !text-[#224347] font-extrabold">// 04 Methodology</span>
-          </div>
+        {/* Section Header */}
+        <div className="flex items-end justify-between gap-6 flex-wrap mb-14 sm:mb-20">
+          <h2 className="font-syne text-[clamp(1.85rem,5vw,3.25rem)] font-bold tracking-tight text-[#224347]">
+            How we work
+          </h2>
+          <p className="text-sm text-[#224347]/65 max-w-[22rem] leading-relaxed">
+            Four phases, always in this order. Select a phase to read more about it.
+          </p>
+        </div>
 
-          {/* Process Steps in 3D Tactile Liquid Glass Cards */}
-          {PROCESS_STEPS.map((step, idx) => {
-            const isActive = activeStep === idx;
-            return (
-              <div
-                key={step.number}
-                onClick={() => setActiveStep(idx)}
-                className={`col-span-12 sm:col-span-6 lg:col-span-3 p-6 sm:p-7 cursor-pointer transition-all rounded-2xl sm:rounded-3xl flex flex-col justify-between gap-6 variation2-card ${
-                  isActive
-                    ? '!border-[#224347] !bg-white/80 shadow-[0_20px_45px_rgba(34,67,71,0.22)]'
-                    : 'hover:!bg-white/70'
-                }`}
-              >
-                <div>
-                  <div
-                    className="font-mono-label text-xs uppercase tracking-widest mb-3 font-extrabold text-[#224347]"
+        {/* Connected Rail */}
+        <div className="relative">
+          <div className="hidden sm:block absolute top-[13px] left-[13px] right-[13px] h-px bg-[#224347]/20" />
+
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-x-6 gap-y-8">
+            {PROCESS_STEPS.map((step, idx) => {
+              const isActive = activeStep === idx;
+              return (
+                <div
+                  key={step.number}
+                  onClick={() => setActiveStep(idx)}
+                  className="relative cursor-pointer group flex sm:block items-start gap-4"
+                >
+                  <span
+                    className={`relative z-10 w-7 h-7 rounded-full border flex items-center justify-center font-mono-label text-[11px] font-bold shrink-0 transition-colors duration-300 ${
+                      isActive
+                        ? 'bg-[#224347] border-[#224347] text-[#AFBEA4]'
+                        : 'bg-[#AFBEA4] border-[#224347]/40 text-[#224347]/70 group-hover:border-[#224347]'
+                    }`}
                   >
                     {step.number}
+                  </span>
+
+                  <div className="mt-0 sm:mt-6">
+                    <h3
+                      className={`font-syne text-lg sm:text-xl font-bold tracking-tight transition-colors duration-300 ${
+                        isActive ? 'text-[#224347]' : 'text-[#224347]/55 group-hover:text-[#224347]/80'
+                      }`}
+                    >
+                      {step.title}
+                    </h3>
+                    <p
+                      className={`text-xs sm:text-sm mt-2 leading-relaxed max-w-[16rem] transition-colors duration-300 ${
+                        isActive ? 'text-[#224347]/85' : 'text-[#224347]/45'
+                      }`}
+                    >
+                      {stepDescriptions[idx]}
+                    </p>
                   </div>
-
-                  <h3 className="font-syne text-lg sm:text-2xl font-bold uppercase tracking-tight text-[#224347]">
-                    {step.title}
-                  </h3>
                 </div>
-
-                <p className="text-xs text-[#224347]/80 leading-relaxed font-inter font-medium">
-                  {stepDescriptions[idx]}
-                </p>
-              </div>
-            );
-          })}
-
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

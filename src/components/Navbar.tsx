@@ -109,9 +109,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
 
           <button
             onClick={onContactClick}
-            className="btn-primary !py-1.5 sm:!py-2 !px-3 sm:!px-4.5 !text-[0.62rem] sm:!text-[0.65rem] !tracking-wider rounded-full cursor-pointer whitespace-nowrap shrink-0 shadow-[0_4px_18px_rgba(34,67,71,0.2),inset_0_1px_1.5px_rgba(255,255,255,0.9)] border border-white/60 active:scale-95 transition-transform"
+            className="btn-primary !py-1.5 sm:!py-2 !px-3 sm:!px-4.5 !text-[0.62rem] sm:!text-[0.65rem] !tracking-wider rounded-full cursor-pointer whitespace-nowrap shrink-0 shadow-[0_4px_18px_rgba(51,36,33,0.25),inset_0_1px_1.5px_rgba(255,255,255,0.2)] border border-white/30 active:scale-95 transition-transform"
           >
-            <span className="text-[#022d28]">Let&apos;s Talk</span>
+            <span className="text-[#F3ECE2]">Let&apos;s Talk</span>
           </button>
 
           {/* Mobile Menu Toggle */}

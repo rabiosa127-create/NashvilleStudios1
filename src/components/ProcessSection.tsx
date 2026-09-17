@@ -40,8 +40,8 @@ export const ProcessSection: React.FC = () => {
                   <span
                     className={`relative z-10 w-7 h-7 rounded-full border flex items-center justify-center font-mono-label text-[11px] font-bold shrink-0 transition-colors duration-300 ${
                       isActive
-                        ? 'bg-[#224347] border-[#224347] text-[#AFBEA4]'
-                        : 'bg-[#AFBEA4] border-[#224347]/40 text-[#224347]/70 group-hover:border-[#224347]'
+                        ? 'bg-[#332421] border-[#332421] text-[#AFBEA4]'
+                        : 'bg-[#AFBEA4] border-[#224347]/40 text-[#224347]/70 group-hover:border-[#332421]'
                     }`}
                   >
                     {step.number}
@@ -50,7 +50,7 @@ export const ProcessSection: React.FC = () => {
                   <div className="mt-0 sm:mt-6">
                     <h3
                       className={`font-syne text-lg sm:text-xl font-bold tracking-tight transition-colors duration-300 ${
-                        isActive ? 'text-[#224347]' : 'text-[#224347]/55 group-hover:text-[#224347]/80'
+                        isActive ? 'text-[#332421]' : 'text-[#332421]/55 group-hover:text-[#332421]/80'
                       }`}
                     >
                       {step.title}

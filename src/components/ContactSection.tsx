@@ -27,9 +27,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ preselectedServi
           
           {/* Left Column */}
           <div className="col-span-12 lg:col-span-5">
-            <span className="label-tag !text-[#224347] font-extrabold">// Contact</span>
-
-            <h2 className="font-syne text-[clamp(1.75rem,6.5vw,2.5rem)] sm:text-5xl lg:text-[3.5rem] font-extrabold uppercase leading-[1.0] sm:leading-[0.95] tracking-[-0.02em] sm:tracking-[-0.03em] text-[#224347] my-6">
+            <h2 className="font-syne text-[clamp(1.75rem,6.5vw,2.5rem)] sm:text-5xl lg:text-[3.5rem] font-extrabold uppercase leading-[1.0] sm:leading-[0.95] tracking-[-0.02em] sm:tracking-[-0.03em] text-[#224347] mb-6">
               <span className="inline-block">Let&apos;s</span>{' '}
               <span className="inline-block">build</span> <br />
               <span className="inline-block">something</span> <br />
@@ -52,20 +50,20 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ preselectedServi
                   href={STUDIO_CONFIG.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-outline !py-3 !px-5 !text-[0.7rem] !text-[#224347] !border-[#224347]/30 !bg-white/70 hover:!bg-white backdrop-blur-md font-bold"
+                  className="btn-outline !py-3 !px-5 !text-[0.7rem] !text-[#F3ECE2] !border-white/20 !bg-[#332421] hover:!bg-[#261a18] backdrop-blur-md font-bold transition-all shadow-sm"
                 >
-                  <MessageSquare className="w-3.5 h-3.5 text-[#224347]" />
-                  <span>WhatsApp Direct</span>
+                  <MessageSquare className="w-3.5 h-3.5 text-[#F3ECE2]" />
+                  <span className="text-[#F3ECE2]">WhatsApp Direct</span>
                 </a>
 
                 <a
                   href={STUDIO_CONFIG.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-outline !py-3 !px-5 !text-[0.7rem] !text-[#224347] !border-[#224347]/30 !bg-white/70 hover:!bg-white backdrop-blur-md font-bold"
+                  className="btn-outline !py-3 !px-5 !text-[0.7rem] !text-[#F3ECE2] !border-white/20 !bg-[#332421] hover:!bg-[#261a18] backdrop-blur-md font-bold transition-all shadow-sm"
                 >
-                  <span>Instagram</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 text-[#224347]" />
+                  <span className="text-[#F3ECE2]">Instagram</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#F3ECE2]" />
                 </a>
               </div>
             </div>
@@ -120,10 +118,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ preselectedServi
 
               <button
                 type="submit"
-                className="btn-primary w-full justify-center !py-4 cursor-pointer shadow-[0_10px_30px_rgba(34,67,71,0.2)]"
+                className="btn-primary w-full justify-center !py-4 cursor-pointer shadow-[0_10px_30px_rgba(51,36,33,0.25)]"
               >
-                <span className="text-[#022d28]">Initiate Project</span>
-                <ArrowUpRight className="w-4 h-4 text-[#022d28]" />
+                <span className="text-[#F3ECE2]">Initiate Project</span>
+                <ArrowUpRight className="w-4 h-4 text-[#F3ECE2]" />
               </button>
 
               {submitted && (

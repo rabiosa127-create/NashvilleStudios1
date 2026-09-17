@@ -43,7 +43,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onStartProject }) => {
           {/* Status Label in Refined Frosted Glass Badge */}
           <motion.div variants={itemVariants} className="col-span-12 mb-4 sm:mb-6">
             <div className="glass3d label-tag rounded-full max-w-full inline-flex items-center gap-2 px-4 py-2 text-[0.65rem] sm:text-xs text-[#224347]">
-              <span className="w-2 h-2 rounded-full bg-[#224347] shadow-[0_0_8px_rgba(34,67,71,0.6)] shrink-0" />
+              <span className="w-2 h-2 rounded-full bg-[#332421] shadow-[0_0_8px_rgba(51,36,33,0.6)] shrink-0" />
               <span>Available for projects</span>
             </div>
           </motion.div>
@@ -83,8 +83,8 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onStartProject }) => {
               onClick={onStartProject}
               className="btn-primary cursor-pointer w-full sm:w-auto justify-center"
             >
-              <span className="text-[#022d28]">Start a Project</span>
-              <ArrowUpRight className="w-4 h-4 text-[#022d28]" />
+              <span className="text-[#F3ECE2]">Start a Project</span>
+              <ArrowUpRight className="w-4 h-4 text-[#F3ECE2]" />
             </button>
 
             <button

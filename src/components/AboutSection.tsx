@@ -149,11 +149,6 @@ export const AboutSection: React.FC = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          {/* Label Header */}
-          <motion.div variants={itemVariants} className="col-span-12 mb-8">
-            <span className="label-tag !text-[#224347] font-extrabold">// 03 About Studio</span>
-          </motion.div>
-
           {/* Large Syne Statement */}
           <motion.div variants={itemVariants} className="col-span-12 lg:col-span-10 mb-8 sm:mb-12">
             <h2 className="font-syne text-[clamp(1.5rem,5.5vw,2.25rem)] sm:text-5xl lg:text-6xl font-extrabold uppercase leading-[1.02] sm:leading-[0.95] tracking-[-0.02em] sm:tracking-[-0.03em] text-[#224347]">
@@ -183,7 +178,7 @@ export const AboutSection: React.FC = () => {
                 {pillar.label}
               </span>
               <div>
-                <h3 className="font-syne text-lg sm:text-xl font-bold uppercase text-[#224347]">
+                <h3 className="font-syne text-lg sm:text-xl font-bold uppercase text-[#332421]">
                   {pillar.title}
                 </h3>
                 {pillar.label === '02' ? (
@@ -199,7 +194,6 @@ export const AboutSection: React.FC = () => {
 
           {/* Studio Directors Strip */}
           <motion.div variants={itemVariants} className="col-span-12 mt-12 pt-8 border-t border-[#224347]/20">
-            <div className="label-tag !text-[#224347] font-extrabold mb-6">// Studio Directors</div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {TEAM_MEMBERS.map((member) => (
                 <div
@@ -208,7 +202,7 @@ export const AboutSection: React.FC = () => {
                 >
                   <div>
                     <div className="flex items-center justify-between">
-                      <span className="font-syne text-base font-bold text-[#224347] uppercase">
+                      <span className="font-syne text-base font-bold text-[#332421] uppercase">
                         {member.name}
                       </span>
                       <div className="flex items-center gap-2">

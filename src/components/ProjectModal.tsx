@@ -153,10 +153,10 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
             </span>
             <button
               onClick={onContactClick}
-              className="btn-primary !py-3 !px-6 !text-xs cursor-pointer w-full sm:w-auto shadow-[0_10px_30px_rgba(34,67,71,0.2)]"
+              className="btn-primary !py-3 !px-6 !text-xs cursor-pointer w-full sm:w-auto shadow-[0_10px_30px_rgba(51,36,33,0.25)]"
             >
-              <span className="text-[#022d28]">Inquire Similar Project</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-[#022d28]" />
+              <span className="text-[#F3ECE2]">Inquire Similar Project</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-[#F3ECE2]" />
             </button>
           </div>
 

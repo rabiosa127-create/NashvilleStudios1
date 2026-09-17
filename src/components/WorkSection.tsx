@@ -80,11 +80,11 @@ export const WorkSection: React.FC<WorkSectionProps> = ({ onSelectProject }) => 
                       {project.shortDescription}
                     </p>
 
-                    <div className="mt-6 inline-flex items-center gap-2 text-xs font-semibold text-[#224347]">
-                      <span className="border-b border-[#224347]/35 group-hover:border-[#224347] pb-0.5 transition-colors">
+                    <div className="mt-6 inline-flex items-center gap-2 text-xs font-semibold px-3.5 py-1.5 rounded-full bg-[#332421] group-hover:bg-[#261a18] border border-white/20 shadow-sm transition-all">
+                      <span className="text-[#F3ECE2] pb-0.5">
                         {project.typeLabel}
                       </span>
-                      <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                      <ArrowUpRight className="w-3.5 h-3.5 text-[#F3ECE2] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </div>
                   </div>
 

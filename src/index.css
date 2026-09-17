@@ -108,7 +108,7 @@
 /* REFINED GLASS MORPHISM SYSTEM (#AFBEA4 CANVAS WITH #224347 TYPOGRAPHY & ACCENTS) */
 .btn-primary {
   --filter-glass3d: blur(6px) brightness(1.02) saturate(2.4);
-  --color-glass3d: rgba(255, 255, 255, 0.82);
+  --color-glass3d: rgba(51, 36, 33, 0.94);
   --noise-glass3d: url("https://www.transparenttextures.com/patterns/egg-shell.png");
 
   position: relative;
@@ -117,8 +117,8 @@
   justify-content: center;
   gap: 12px;
   padding: 16px 34px;
-  color: #022d28;
-  border: 1px solid rgba(255, 255, 255, 0.85);
+  color: #F3ECE2;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -177,9 +177,9 @@
 }
 
 .btn-primary:hover {
-  border-color: rgba(255, 255, 255, 1);
-  color: #022d28;
-  --color-glass3d: rgba(255, 255, 255, 0.95);
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #F3ECE2;
+  --color-glass3d: rgba(40, 28, 25, 0.98);
   transform: translateY(-1.5px);
   box-shadow: 
     0 0 1px hsl(205 20% 10% / 0.25), 

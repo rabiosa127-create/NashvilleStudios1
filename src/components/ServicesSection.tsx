@@ -66,17 +66,17 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                     onClick={() => setOpenId(isOpen ? '' : service.id)}
                     className="w-full flex items-center justify-between gap-6 py-7 sm:py-9 text-left cursor-pointer group"
                   >
-                    <span className="font-syne text-xl sm:text-3xl font-bold tracking-tight text-[#224347] group-hover:text-[#172e31] transition-colors">
+                    <span className="font-syne text-xl sm:text-3xl font-bold tracking-tight text-[#332421] group-hover:text-[#261a18] transition-colors">
                       {service.title}
                     </span>
                     <span
                       className={`shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full border flex items-center justify-center transition-all duration-300 ${
                         isOpen
-                          ? 'rotate-45 bg-[#224347] border-[#224347]'
-                          : 'border-[#224347]/30 group-hover:border-[#224347]/60'
+                          ? 'rotate-45 bg-[#332421] border-[#332421]'
+                          : 'border-[#224347]/30 group-hover:border-[#332421]/60'
                       }`}
                     >
-                      <Plus className={`w-4 h-4 transition-colors ${isOpen ? 'text-[#AFBEA4]' : 'text-[#224347]'}`} />
+                      <Plus className={`w-4 h-4 transition-colors ${isOpen ? 'text-[#AFBEA4]' : 'text-[#332421]'}`} />
                     </span>
                   </button>
 
@@ -97,7 +97,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                           <div className="md:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 content-start">
                             {service.keyFeatures.map((feature, i) => (
                               <div key={i} className="text-xs text-[#224347] font-medium flex items-center gap-2">
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#224347] shrink-0" />
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#332421] shrink-0" />
                                 <span>{feature}</span>
                               </div>
                             ))}
@@ -105,7 +105,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
 
                           <button
                             onClick={() => onSelectService(service.title)}
-                            className="md:col-span-12 inline-flex w-fit items-center gap-2 text-xs font-semibold text-[#224347] border-b border-[#224347]/40 hover:border-[#224347] pb-0.5 transition-colors cursor-pointer"
+                            className="md:col-span-12 inline-flex w-fit items-center gap-2 text-xs font-semibold text-[#F3ECE2] bg-[#332421] hover:bg-[#261a18] px-4 py-2 rounded-full border border-white/20 shadow-sm transition-all cursor-pointer"
                           >
                             Inquire about {service.title}
                           </button>
